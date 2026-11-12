@@ -72,10 +72,89 @@ console.log("*******************************************")
 
 for(let i=10; i>=1 ; i--) // i>=1; i>0
 {
+    if(i==5){
+        continue
+    }
     console.log(i) 
 }
 
-// while
+// break - To exit the loop when a certain condition is met
+// continue - To skip the current iteration and move to the net iteration
 
-let i = 90
-i = 89900
+
+console.log("****************************************")
+
+// 2. while loop
+// Syntax:
+
+/*
+
+initialization - let j=1
+
+while(condition){
+    // block of code
+    increment/decrement - j++/j--
+
+}
+
+
+*/
+
+// print 1-10
+let j = 1
+
+while(j<=10){
+    console.log(j)
+    j++
+}
+
+console.log("******************************************");
+
+let attempt = 0
+
+while(true){
+    if(attempt>=3){
+        console.log("Please enter the correct username or password");
+    }
+    else{
+        console.log("You account has been locked");
+        break
+    }
+    attempt++
+}
+
+
+console.log("***********************************************")
+
+// 3. do while loop - 
+
+// Syntax:
+
+/*
+
+initialization - let k = 1
+
+do{
+    // code to be excuted
+    // increment/decrement
+}while(condition);
+
+
+*/
+
+let attempts = 0
+
+do{
+    console.log("Please enter the correct username or password");
+    attempt++
+
+}while(attempt>=3);
+
+console.log("******************************");
+
+
+let var1 = 0
+while(var1>=3){
+     console.log("Please enter the correct username or password");
+    var1++
+}
