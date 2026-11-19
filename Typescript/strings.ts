@@ -49,7 +49,15 @@ console.log(str1.charAt(10))
 // a NEW string
 
 // stringName.contact(str2, str3,...)
-console.log(str1.concat(" and Javascript", " also Playwright"));
+
+let str2 = " and Javascript"
+
+let str3 = " also Playwright"
+
+let str4 = str1.concat(str2)
+console.log(str4);
+
+
 console.log(str1)
 
 // 4. includes(substring, startIndex?)
