@@ -122,7 +122,80 @@ arr5.splice(2, arr5.length)
 
 console.log(arr5);
 
-// 6. slice()
+let arr6 = ["Apple", "Mango", 10, 22, 46, 45767, "JS"]
+
+// 6. slice(startIndex?, endIndex?) - Return the portion of an element from 
+// startIndex to endIndex-1
+
+// startIndex(Optional) - The position where you want to start the slice. Default to 0
+// endIndex(Exclusive - Optional) - The position where you want the slice to end. last index inside the array
+
+console.log(arr6.slice())
+console.log(arr6.slice(2))
+console.log(arr6.slice(2,6))
+
+
+// 7. indexOf(element, startIndex?) - Returns the index of the first occurances of 
+// an element in an array or -1 if not found.
+
+let arr7 = [10,20,30,40,10,20,10,40,34,56,10]
+
+let index = arr7.indexOf(10, 7)
+console.log(index)
+
+// Assignment -1:
+// Write a program to find out all the index of 10 available inside the arr7
+// Output - 0, 4, 6, 10
+
+
+// 8. lastIndexOf(element, startIndex?) - Return the index of the last occurances
+// of an element inside an array
+
+console.log(arr7.lastIndexOf(10, 7))
+
+// Note: indexOf() search from the left side to the right side inside the array and
+// lastIndexOf() search from the right side to the left side inside an array.
+
+
+// 9. includes(element) - Return true if the element is available inside an
+// array otherwise false.
+
+// let arr7 = [10,20,30,40,10,20,10,40,34,56,10]
+
+console.log(arr7.includes(100))
+
+for(let ele of arr7){
+    if(ele == 34){
+        console.log("true")
+    }
+}
+
+
+// 9. join(separator?) - Join all the elements of an array and return it as a string
+
+let arr9 = [20,11,2026] // dd-mm-yyyy
+
+console.log(arr9.join("-"))
+
+// 10. toString() - Conver the array into string
+console.log(arr9.toString())
+
+
+// String - PW
+
+// Framework - 
+// Object
+// Class
+// Inheritance
+
+
+
+
+
+
+
+
+
 
 
 
